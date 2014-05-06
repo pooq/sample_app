@@ -16,4 +16,5 @@
 *.[oa]
 *~
 *.swp
-
+.gitignore
+.rspec
