@@ -12,14 +12,13 @@ describe "StaticPages" do
 end
 =end
 
-=begin
 describe "Static pages" do
 	describe "Home page" do
 		#it "should have the content 'Sample App'" do
 		  it "should have the h1'Sample App'" do
 			visit '/static_pages/home'
 		#	page.should have_content('Sample App')
-			page.should have_selector('h1', :text=>'Sameple App')
+			page.should have_selector('h1', :text=>'Sample App')
 		end
 
          it "should have the title 'Home' " do
@@ -65,13 +64,11 @@ describe "Static pages" do
 		end
    end
 
-
-
 end
-=end
 
 
 
+=begin
 describe "Static pages" do
 
   describe "Home page" do
@@ -109,13 +106,12 @@ describe "Static pages" do
     end
 
 
-=begin capybara版本1.x.x title的写法
-it "should have the title 'About Us'" do
-      visit '/static_pages/about'
-      page.should have_title('title',
-                    :text => "Ruby on Rails Tutorial Sample App | About Us")
-    end
-=end
+#n capybara版本1.x.x title的写法
+#it "should have the title 'About Us'" do
+#      visit '/static_pages/about'
+ #     page.should have_title('title',
+ #                   :text => "Ruby on Rails Tutorial Sample App | About Us")
+ #   end
 
     it "should have the title 'About Us'" do
       visit '/static_pages/about'
@@ -123,4 +119,4 @@ it "should have the title 'About Us'" do
     end
   end
 end
-
+=end
