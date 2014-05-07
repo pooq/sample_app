@@ -8,11 +8,14 @@ gem 'rails', '3.2.3'
 gem 'mysql2'
 
 group :development, :test do
-	gem 'rspec-rails','2.13.1'
+	gem 'rspec-rails','2.14.2'
+	gem 'rspec-mocks','2.14.6'
+	gem 'guard-rspec','1.2.1'
 end
 
+
 group :test do
-	gem 'capybara','2.1.0'
+	gem 'capybara','1.1.2'
 end
 
 # Gems used only for assets and not required
@@ -27,7 +30,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails','2.2.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
